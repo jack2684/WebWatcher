@@ -2,23 +2,31 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
 public class WebWatcher {
 
-  public static void main(String[] args) {
-    int INTERVAL = 2500; // ms
+  public static int INTERVAL = 2500; // ms
 
+  public static void main(String[] args) throws InterruptedException {
+    while (!watching("http://www.dartmouthre.com/dartmouth-rentals/")) {
+      System.out.println("Watching down, try after 10 sec");
+      Thread.sleep(INTERVAL * 4);
+    }
+    // String url = "http://192.168.8.143/";
+  }
+
+  public static boolean watching(String url) {
     Document doc;
     try {
-
-      // need http protocol
-//      String url = "http://www.dartmouthre.com/dartmouth-rentals/";
-      String url = "http://192.168.8.143/";
       doc = Jsoup.connect(url).get();
 
       // get page title
@@ -26,33 +34,33 @@ public class WebWatcher {
       System.out.println("title : " + title);
       System.out.println("url : " + url);
 
-/*      // get all links
-      Elements links = doc.select("a[href]");
-      for (Element link : links) {
-
-        // get the value from href attribute
-        System.out.println("\nlink : " + link.attr("href"));
-        System.out.println("text : " + link.text());
-
-      }*/
-
       // try to get the body
       int old_hash = get_html_hash(url);
       while (true) {
-        Thread.sleep(INTERVAL);
+        // print date and time
+        DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+        Date date = new Date();
+        System.out.print(dateFormat.format(date) + "\t");
+
+        // sleep
+        try {
+          Thread.sleep(INTERVAL);
+        } catch (InterruptedException e) {
+          e.printStackTrace();
+        }
+
         int new_hash = get_html_hash(url);
         if (new_hash != old_hash) {
           System.out.println("Updated!!");
           old_hash = new_hash;
+          SendMailTLS.send(url);
         } else {
           System.out.println("nothing...");
         }
       }
-
     } catch (IOException e) {
       e.printStackTrace();
-    } catch (InterruptedException e) {
-      e.printStackTrace();
+      return false;
     }
   }
 
