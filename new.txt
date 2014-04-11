@@ -1,0 +1,618 @@
+<body id="default" class="listings article366 category staticsearchinc"> 
+ <p id="sitename"><a href="/" title="Dartmouth College Real Estate Office">Dartmouth College Real Estate Office</a></p> 
+ <ul id="navbar"> 
+  <li id="nb0"><a href="http://www.dartmouthre.com/">Home</a></li> 
+  <li id="nb1"><a href="http://www.dartmouthre.com/home/rental-housing/">Rental Housing</a>
+   <ul> 
+    <li><a href="http://www.dartmouthre.com/rental-housing/dartmouth-rentals/">Dartmouth Rental Housing</a>
+     <ul> 
+      <li><a href="http://www.dartmouthre.com/rental-housing/dartmouth-rentals/apply-for-graduate-rental/">Graduate Rentals</a></li> 
+      <li><a href="http://www.dartmouthre.com/rental-housing/dartmouth-rentals/apply-for-an-employee-rental/">Employee Rentals</a></li> 
+      <li><a href="http://www.dartmouthre.com/rental-housing/dartmouth-rentals/general-public-rentals/">General Public Rentals</a></li> 
+      <li><a href="http://www.dartmouthre.com/rental-housing/dartmouth-rentals/policies-frequently-asked-questions/">FAQs</a></li> 
+     </ul> </li> 
+    <li><a href="http://www.dartmouthre.com/rental-housing/upper-valley-rentals/">Upper Valley Rentals</a>
+     <ul> 
+      <li><a href="http://www.dartmouthre.com/upper-valley-rentals/">Search Listings</a></li> 
+      <li><a href="http://www.dartmouthre.com/proddir/admin/home/">Add/Edit Listing</a></li> 
+      <li><a href="http://www.dartmouthre.com/rental-housing/upper-valley-rentals/landlord-frequently-asked-questions/">Landlord FAQ's</a></li> 
+     </ul> </li> 
+   </ul> </li> 
+  <li id="nb2"><a href="http://www.dartmouthre.com/for-sale-housing/for-sale-housing/">Home Sales</a>
+   <ul> 
+    <li><a href="http://www.dartmouthre.com/for-sale-housing/for-sale-housing/">For Sale Programs</a></li> 
+    <li><a href="http://www.dartmouthre.com/proddir/archive/379/">Current Listings</a></li> 
+    <li><a href="http://www.dartmouthre.com/for-sale-housing/dartmouth-plus-home-purchase-assistance/">Mortgage Assistance</a></li> 
+    <li><a href="http://www.dartmouthre.com/for-sale-housing/repurchase-options-and-rights-of-first-refusal/">Repurchase Options</a></li> 
+   </ul> </li> 
+  <li id="nb3"><a href="http://www.dartmouthre.com/dartmouth-college-commercial-property/">Commercial Space</a>
+   <ul> 
+    <li><a href="http://www.dartmouthre.com/commercial-properties/space-for-lease/">Space for Lease</a></li> 
+    <li><a href="http://www.dartmouthre.com/commercial-properties/downtown-parking/">Downtown Parking</a></li> 
+   </ul> </li> 
+  <li id="nb4"><a href="http://www.dartmouthre.com/tenant-services/">Tenant Services</a>
+   <ul> 
+    <li><a href="http://www.dartmouthre.com/tenant-services/urgent-matters/">Urgent Matters</a></li> 
+    <li><a href="http://www.dartmouthre.com/tenant-services/place-a-work-order/">Place a Work Order</a></li> 
+   </ul> </li> 
+  <li id="nb5"><a href="http://www.dartmouthre.com/area-information/">Area Information</a></li> 
+  <li id="nb6"><a href="http://www.dartmouthre.com/contact/office-staff/">Contact</a>
+   <ul> 
+    <li><a href="http://www.dartmouthre.com/contact/office-staff/">Office Staff</a></li> 
+    <li><a href="http://www.dartmouthre.com/contact/customer-service/">Who do I contact for...</a></li> 
+   </ul> </li> 
+ </ul> 
+ <!--
+	CSS KEYS:
+
+	#ow		: The outer wrapper.. full width of browser
+	#w 		: The wrapper area
+	#lc		: The left and center column
+	#l		: The left column
+	#c		: The center column
+	#r		: The right column
+	--> 
+ <div id="ow"> 
+  <div id="w"> 
+   <div id="lc"> 
+    <div id="c"> 
+     <div id="pageImageFindYourPlace" class="pageImage5"> 
+      <div class="topround"></div> 
+      <!-- /.topround --> 
+     </div> 
+     <!-- /.pageImageFindYourPlace --> 
+     <div class="pod"> 
+      <p class="backto"><a href="#" onclick="window.print();return false;"><img src="/data/images/printer.png" title="Print" alt="Print" border="0" /> Print this page</a></p> 
+      <h1>Dartmouth Rentals</h1> 
+      <a name="whoami"></a> 
+      <p>Help us provide you with the best rentals for your needs by filling out the form below.</p> 
+      <div id="whoami"> 
+       <script type="text/javascript">
+        function showOthers (value) {
+            if (value == "Dartmouth Graduate Student") $('#others').slideDown('fast');
+            else $('#others').slideUp('fast');
+        }
+    </script> 
+       <form method="post" action="/proddir/search/366/"> 
+        <fieldset> 
+         <legend>Who Am I?</legend> 
+         <div class="formleft"> 
+          <p class="whoami-item"> <label for="UserType">I am a:</label> <select name="UserType" id="UserType" onchange="showOthers(this.options[this.selectedIndex].value);"> <option value="Dartmouth Faculty">Dartmouth Faculty</option> <option value="Dartmouth Staff">Dartmouth Staff</option> <option value="Dartmouth Graduate Student">Dartmouth Graduate Student</option> <option value="Member of the General Public">Member of the General Public</option> </select> </p> 
+          <div id="others" style="display: none;"> 
+           <p class="whoami-item split"> <label for="AdditionalHousing_Child">Children:</label> <select name="AdditionalHousing[]" id="AdditionalHousing_Child"> <option value="Dependent">Yes</option> <option value="" selected="">No</option> </select> </p> 
+           <p class="whoami-item split"> <label for="AdditionalHousing_Partner">Spouse/Partner:</label> <select name="AdditionalHousing[]" id="AdditionalHousing_Partner"> <option value="Partner">Yes</option> <option value="" selected="">No</option> </select> </p> 
+          </div> 
+          <p class="whoami-submit"> <input type="submit" value="Show Matching Rentals" /> </p> 
+         </div> 
+        </fieldset> 
+       </form> 
+      </div> 
+      <div class="rentallistview"> 
+       <div class="fakefieldset"> 
+        <p class="fakelegend">Search Options</p> 
+        <style type="text/css">
+        div.queryitem {
+            float: left;
+            margin-right: 1em;
+        }
+    </style> 
+        <form method="get" id="searchlistings" name="searchlistings" class="searchlistings" action="/proddir/search/366//ListPrice//20"> 
+         <div class="queryitem"> 
+          <label for="HousingType">Housing Type</label> 
+          <select name="Search[HousingType]" id="HousingType"> <option value="">All</option> <option value="House">House</option> <option value="Apt Condo">Apt Condo</option> <option value="Room">Room</option> <option value="Garage">Garage</option> </select> 
+         </div> 
+         <div class="queryitem"> 
+          <label for="City">Town</label> 
+          <select name="Search[City]" id="City"> <option value="">All</option> <option value="Hanover">Hanover</option> </select> 
+         </div> 
+         <div class="queryitem"> 
+          <label for="RentMax">Rent</label> 
+          <select name="Search[Rent][max]" id="RentMax"> <option value="">All</option> <option value="750">$750 or less</option> <option value="1000">$1000 or less</option> <option value="1500">$1500 or less</option> <option value="2000">$2000 or less</option> </select> 
+         </div> 
+         <div class="queryitem"> 
+          <label for="Bedrooms">Bedrooms</label> 
+          <select name="Search[BedroomsNum][min]" id="Bedrooms"> <option value="">Any</option> <option value="0">Studio</option> <option value="1">1+</option> <option value="2">2+</option> <option value="3">3+</option> <option value="4">4+</option> </select> 
+         </div> 
+         <div class="queryitem"> 
+          <label for="Furnished">Furnished</label> 
+          <select name="Search[Furnished]" id="Furnished"> <option value="">All</option> <option value="Included">Yes</option> <option value="Not Included">No</option> </select> 
+         </div> 
+         <div class="queryitem"> 
+          <label for="Pets">Pets OK</label> 
+          <select name="Search[Pets]" id="Pets"> <option value="">All</option> <option value="Yes">Yes</option> <option value="No">No</option> </select> 
+         </div> 
+         <div class="queryitem"> 
+          <label for="LeaseType">Lease Term</label> 
+          <select name="Search[LeaseType]" id="LeaseType"> <option value="">Lease Term</option> <option value="One Year">One Year</option> <option value="Month to Month">Month to Month</option> <option value="Short Term">Short Term</option> <option value="">All</option> </select> 
+         </div> 
+         <div class="clearboth"></div> 
+         <input type="submit" value="Perform Search" style="font-weight: bold;float:right;" /> 
+        </form> 
+        <form> 
+         <select name="OrderBy" id="OrderBy" onchange="$('#searchlistings').attr('action', this.options[this.selectedIndex].value);"> <option value="">Sort Results</option> <option value="/proddir/search/366//Town//20?">Sorted by Town</option> <option value="/proddir/search/366//Rent//20?">Sorted by Rent (Low to High)</option> <option value="/proddir/search/366//-Rent//20?">Sorted by Rent (High to Low)</option> <option value="/proddir/search/366//FromCampusDistance//20?">Sorted by Distance from Campus</option> <option value="/proddir/search/366//DateAvailable//20?">Sorted by Date Available</option> </select> 
+        </form> 
+       </div> 
+       <!-- /.fakefieldset --> 
+       <div class="lv-navigator"> 
+       </div> 
+       <!-- VAR gmap_height=350 --> 
+       <script language="javascript">
+function createCookie(name,value,days) {
+if (days) {
+var date = new Date();
+date.setTime(date.getTime()+(days*24*60*60*1000));
+var expires = "; expires="+date.toGMTString();
+}
+else var expires = "";
+document.cookie = name+"="+value+expires+"; path=/";
+}
+
+function readCookie(name) {
+var nameEQ = name + "=";
+var ca = document.cookie.split(';');
+for(var i=0;i < ca.length;i++) {
+var c = ca[i];
+while (c.charAt(0)==' ') c = c.substring(1,c.length);
+if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+}
+return null;
+}
+
+function eraseCookie(name) {
+createCookie(name,"",-1);
+}
+function hideGmap() {
+    document.getElementById('gmapframe').style.display = 'none';
+    document.getElementById('hidegmap').style.display = 'none';
+    document.getElementById('showgmap').style.display = 'block';
+    eraseCookie("gmapshowhide");
+    createCookie("gmapshowhide","hide","120");
+}
+function showGmap() {
+    document.getElementById('gmapframe').src='http://surveyor.unionstreetmedia.com/static/page/unionstreetmedia/gmap_proddir.php?gmapProds=12;62;68;73;85;111;267;319;336;482&cid=1110&ProdTypeID=366&w=100%&h=350&l=&sb=n&d=dartmouthre.com&c=true';
+    document.getElementById('gmapframe').style.display = 'block';
+    document.getElementById('hidegmap').style.display = 'block';
+    document.getElementById('showgmap').style.display = 'none';
+    eraseCookie("gmapshowhide");
+    createCookie("gmapshowhide","show","120");
+}
+</script> 
+       <iframe id="gmapframe" width="720" height="350" src="http://surveyor.unionstreetmedia.com/static/page/unionstreetmedia/gmap_proddir.php?gmapProds=12;62;68;73;85;111;267;319;336;482&amp;cid=1110&amp;ProdTypeID=366&amp;w=100%&amp;h=350&amp;l=&amp;sb=n&amp;d=dartmouthre.com&amp;c=true" frameborder="0"></iframe> 
+       <div id="hidegmap"> 
+        <a href="javascript: hideGmap();">Hide Map</a> 
+       </div> 
+       <div id="showgmap"> 
+        <a href="javascript: showGmap();">Display Listings On Map</a> 
+       </div> 
+       <script language="javascript">
+var showhide = readCookie("gmapshowhide");
+if (showhide == "hide") {
+   hideGmap();
+}
+else if (showhide == "show") {
+   showGmap();
+}
+else {
+   showGmap();
+}
+</script> 
+       <h3 class="lv-header"> <span> North Park Graduate Housing </span> <a href="/proddir/prod/366/12?RedirectURL=%2FListPrice%2F0%2F20%2F%3F" style="width:70%;"> 10 North Park, Apt. A, Hanover, NH 
+         <!--
+
+	
+	03755
+	
+	
+--> </a> </h3> 
+       <p class="lv-photo"><a href="/proddir/prod/366/12?RedirectURL=%2FListPrice%2F0%2F20%2F%3F"><img src="http://surveyor-usmimagecatalogue.s3.amazonaws.com/12189493-160x120.jpg?1396452764" border="0" alt="" /></a></p> 
+       <ul class="lv-details"> 
+        <li><span>Housing Type:</span> Room </li> 
+        <li><span>Rent:</span> $879 </li> 
+        <!-- VAR DateFormat=%m/%d/%y --> 
+        <li><span>Date Available:</span> 04/01/14 </li> 
+        <li><span>Miles to Campus:</span> 0 - 0.5 miles </li> 
+        <li><span>Bedrooms:</span> 4 </li> 
+        <li><span>Furnished:</span> Yes </li> 
+        <li><span>Bathrooms:</span> 2 </li> 
+        <li><span>Pets:</span> No </li> 
+        <li><span>Sq. Ft:</span> 1,195 </li> 
+        <li class="commitment_No"><span>Lease Pending</span> <span class="commitment_yn">No</span> </li> 
+        <li class="commitment_No">&nbsp;</li> 
+        <li class="lv-moredetails"><a href="/proddir/prod/366/12?RedirectURL=%2FListPrice%2F0%2F20%2F%3F">View Property</a></li>
+        <!-- spanboth--> 
+        <li class="spanboth" style="margin-top:-.9em;"><span>Offered To:</span> <em> Dartmouth Graduate Students </em> </li> 
+        <li class="spanboth"><span>Contact:</span> 603-646-2170 or <a href="mailto:real.estate.office@dartmouth.edu">send us an email</a> </li> 
+        <!--
+	<li><span>Rating:</span>
+	
+	3
+	
+	
+
+--> 
+       </ul> 
+       <h3 class="lv-header"> <span> Fletcher - Cedar Drive </span> <a href="/proddir/prod/366/62?RedirectURL=%2FListPrice%2F0%2F20%2F%3F" style="width:70%;"> 39 Cedar Drive, Hanover, NH 
+         <!--
+
+	
+	03755
+	
+	
+--> </a> </h3> 
+       <p class="lv-photo"><a href="/proddir/prod/366/62?RedirectURL=%2FListPrice%2F0%2F20%2F%3F"><img src="http://surveyor-usmimagecatalogue.s3.amazonaws.com/13468981-160x120.jpg?1395163737" border="0" alt="" /></a></p> 
+       <ul class="lv-details"> 
+        <li><span>Housing Type:</span> House </li> 
+        <li><span>Rent:</span> $1,415 </li> 
+        <!-- VAR DateFormat=%m/%d/%y --> 
+        <li><span>Date Available:</span> 04/02/14 </li> 
+        <li><span>Miles to Campus:</span> 1 - 5 miles </li> 
+        <li><span>Bedrooms:</span> 3 </li> 
+        <li><span>Furnished:</span> No </li> 
+        <li><span>Bathrooms:</span> 1 </li> 
+        <li><span>Pets:</span> Maximum-2 </li> 
+        <li><span>Sq. Ft:</span> 925 </li> 
+        <li class="commitment_No"><span>Lease Pending</span> <span class="commitment_yn">No</span> </li> 
+        <li class="commitment_No">&nbsp;</li> 
+        <li class="lv-moredetails"><a href="/proddir/prod/366/62?RedirectURL=%2FListPrice%2F0%2F20%2F%3F">View Property</a></li>
+        <!-- spanboth--> 
+        <li class="spanboth" style="margin-top:-.9em;"><span>Offered To:</span> <em> Dartmouth Employees </em> </li> 
+        <li class="spanboth"><span>Contact:</span> 603-646-2170 or <a href="mailto:real.estate.office@dartmouth.edu">send us an email</a> </li> 
+        <!--
+	<li><span>Rating:</span>
+	
+	2
+	
+	
+
+--> 
+       </ul> 
+       <h3 class="lv-header"> <span> Fletcher - Cedar Drive </span> <a href="/proddir/prod/366/68?RedirectURL=%2FListPrice%2F0%2F20%2F%3F" style="width:70%;"> 24 Cedar Drive, Hanover, NH 
+         <!--
+
+	
+	03755
+	
+	
+--> </a> </h3> 
+       <p class="lv-photo"><a href="/proddir/prod/366/68?RedirectURL=%2FListPrice%2F0%2F20%2F%3F"><img src="http://surveyor-usmimagecatalogue.s3.amazonaws.com/13440796-160x120.jpg?1395164065" border="0" alt="" /></a></p> 
+       <ul class="lv-details"> 
+        <li><span>Housing Type:</span> House </li> 
+        <li><span>Rent:</span> $1,465 </li> 
+        <!-- VAR DateFormat=%m/%d/%y --> 
+        <li><span>Date Available:</span> 03/24/14 </li> 
+        <li><span>Miles to Campus:</span> 1 - 5 miles </li> 
+        <li><span>Bedrooms:</span> 3 </li> 
+        <li><span>Furnished:</span> No </li> 
+        <li><span>Bathrooms:</span> 1 </li> 
+        <li><span>Pets:</span> Maximum-2 </li> 
+        <li><span>Sq. Ft:</span> 925 </li> 
+        <li class="commitment_No"><span>Lease Pending</span> <span class="commitment_yn">No</span> </li> 
+        <li class="commitment_No">&nbsp;</li> 
+        <li class="lv-moredetails"><a href="/proddir/prod/366/68?RedirectURL=%2FListPrice%2F0%2F20%2F%3F">View Property</a></li>
+        <!-- spanboth--> 
+        <li class="spanboth" style="margin-top:-.9em;"><span>Offered To:</span> <em> Dartmouth Employees </em> </li> 
+        <li class="spanboth"><span>Contact:</span> 603-646-2170 or <a href="mailto:real.estate.office@dartmouth.edu">send us an email</a> </li> 
+        <!--
+	<li><span>Rating:</span>
+	
+	3
+	
+	
+
+--> 
+       </ul> 
+       <h3 class="lv-header"> <span> In-Town Hanover </span> <a href="/proddir/prod/366/73?RedirectURL=%2FListPrice%2F0%2F20%2F%3F" style="width:70%;"> 22 E. Wheelock Street, Apt. A, Hanover, NH 
+         <!--
+
+	
+	03755
+	
+	
+--> </a> </h3> 
+       <p class="lv-photo"><a href="/proddir/prod/366/73?RedirectURL=%2FListPrice%2F0%2F20%2F%3F"><img src="http://surveyor-usmimagecatalogue.s3.amazonaws.com/12087693-160x120.jpg?1395864819" border="0" alt="" /></a></p> 
+       <ul class="lv-details"> 
+        <li><span>Housing Type:</span> Apt Condo </li> 
+        <li><span>Rent:</span> $1,607 </li> 
+        <!-- VAR DateFormat=%m/%d/%y --> 
+        <li><span>Date Available:</span> 04/16/14 </li> 
+        <li><span>Miles to Campus:</span> 0 - 0.5 miles </li> 
+        <li><span>Bedrooms:</span> 2 </li> 
+        <li><span>Furnished:</span> No </li> 
+        <li><span>Bathrooms:</span> 1 </li> 
+        <li><span>Pets:</span> No </li> 
+        <li><span>Sq. Ft:</span> 990 </li> 
+        <li class="commitment_Yes"><span>Lease Pending</span> <span class="commitment_yn">Yes</span> </li> 
+        <li class="commitment_Yes">&nbsp;</li> 
+        <li class="lv-moredetails"><a href="/proddir/prod/366/73?RedirectURL=%2FListPrice%2F0%2F20%2F%3F">View Property</a></li>
+        <!-- spanboth--> 
+        <li class="spanboth" style="margin-top:-.9em;"><span>Offered To:</span> <em> Dartmouth Employees </em> </li> 
+        <li class="spanboth"><span>Contact:</span> 603-646-2170 or <a href="mailto:real.estate.office@dartmouth.edu">send us an email</a> </li> 
+        <!--
+	<li><span>Rating:</span>
+	
+	3
+	
+	
+
+--> 
+       </ul> 
+       <h3 class="lv-header"> <span> Fletcher - Cedar Drive </span> <a href="/proddir/prod/366/85?RedirectURL=%2FListPrice%2F0%2F20%2F%3F" style="width:70%;"> 17 Fletcher Circle, Hanover, NH 
+         <!--
+
+	
+	03755
+	
+	
+--> </a> </h3> 
+       <p class="lv-photo"><a href="/proddir/prod/366/85?RedirectURL=%2FListPrice%2F0%2F20%2F%3F"><img src="http://surveyor-usmimagecatalogue.s3.amazonaws.com/13404504-160x120.jpg?1395164855" border="0" alt="" /></a></p> 
+       <ul class="lv-details"> 
+        <li><span>Housing Type:</span> House </li> 
+        <li><span>Rent:</span> $1,465 </li> 
+        <!-- VAR DateFormat=%m/%d/%y --> 
+        <li><span>Date Available:</span> 04/01/14 </li> 
+        <li><span>Miles to Campus:</span> 5 - 10 miles </li> 
+        <li><span>Bedrooms:</span> 3 </li> 
+        <li><span>Furnished:</span> No </li> 
+        <li><span>Bathrooms:</span> 1 </li> 
+        <li><span>Pets:</span> Maximum-2 </li> 
+        <li><span>Sq. Ft:</span> 925 </li> 
+        <li class="commitment_No"><span>Lease Pending</span> <span class="commitment_yn">No</span> </li> 
+        <li class="commitment_No">&nbsp;</li> 
+        <li class="lv-moredetails"><a href="/proddir/prod/366/85?RedirectURL=%2FListPrice%2F0%2F20%2F%3F">View Property</a></li>
+        <!-- spanboth--> 
+        <li class="spanboth" style="margin-top:-.9em;"><span>Offered To:</span> <em> Dartmouth Employees </em> </li> 
+        <li class="spanboth"><span>Contact:</span> 603-646-2170 or <a href="mailto:real.estate.office@dartmouth.edu">send us an email</a> </li> 
+        <!--
+	<li><span>Rating:</span>
+	
+	3
+	
+	
+
+--> 
+       </ul> 
+       <h3 class="lv-header"> <span> In-Town Hanover </span> <a href="/proddir/prod/366/111?RedirectURL=%2FListPrice%2F0%2F20%2F%3F" style="width:70%;"> 1 N. Park Street, Apt. 5, Hanover, NH 
+         <!--
+
+	
+	03755
+	
+	
+--> </a> </h3> 
+       <p class="lv-photo"><a href="/proddir/prod/366/111?RedirectURL=%2FListPrice%2F0%2F20%2F%3F"><img src="http://surveyor-usmimagecatalogue.s3.amazonaws.com/12087654-160x120.jpg?1396287419" border="0" alt="" /></a></p> 
+       <ul class="lv-details"> 
+        <li><span>Housing Type:</span> Apt Condo </li> 
+        <li><span>Rent:</span> $1,580 </li> 
+        <!-- VAR DateFormat=%m/%d/%y --> 
+        <li><span>Date Available:</span> 04/01/14 </li> 
+        <li><span>Miles to Campus:</span> 0 - 0.5 miles </li> 
+        <li><span>Bedrooms:</span> 2 </li> 
+        <li><span>Furnished:</span> No </li> 
+        <li><span>Bathrooms:</span> 1 </li> 
+        <li><span>Pets:</span> Maximum-2 </li> 
+        <li><span>Sq. Ft:</span> 890 </li> 
+        <li class="commitment_No"><span>Lease Pending</span> <span class="commitment_yn">No</span> </li> 
+        <li class="commitment_No">&nbsp;</li> 
+        <li class="lv-moredetails"><a href="/proddir/prod/366/111?RedirectURL=%2FListPrice%2F0%2F20%2F%3F">View Property</a></li>
+        <!-- spanboth--> 
+        <li class="spanboth" style="margin-top:-.9em;"><span>Offered To:</span> <em> Dartmouth Employees </em> </li> 
+        <li class="spanboth"><span>Contact:</span> 603-646-2170 or <a href="mailto:real.estate.office@dartmouth.edu">send us an email</a> </li> 
+        <!--
+	<li><span>Rating:</span>
+	
+	2
+	
+	
+
+--> 
+       </ul> 
+       <h3 class="lv-header"> <span> Sachem Village </span> <a href="/proddir/prod/366/267?RedirectURL=%2FListPrice%2F0%2F20%2F%3F" style="width:70%;"> 28 Drake Lane , West Lebanon, NH 
+         <!--
+
+	
+	03784
+	
+	
+--> </a> </h3> 
+       <p class="lv-photo"><a href="/proddir/prod/366/267?RedirectURL=%2FListPrice%2F0%2F20%2F%3F"><img src="http://surveyor-usmimagecatalogue.s3.amazonaws.com/12212398-160x120.jpg?1397063509" border="0" alt="" /></a></p> 
+       <ul class="lv-details"> 
+        <li><span>Housing Type:</span> Apt Condo </li> 
+        <li><span>Rent:</span> $1,475 </li> 
+        <!-- VAR DateFormat=%m/%d/%y --> 
+        <li><span>Date Available:</span> 07/01/14 </li> 
+        <li><span>Miles to Campus:</span> 1 - 5 miles </li> 
+        <li><span>Bedrooms:</span> 2 </li> 
+        <li><span>Furnished:</span> No </li> 
+        <li><span>Bathrooms:</span> 1 </li> 
+        <li><span>Pets:</span> Maximum-2 </li> 
+        <li><span>Sq. Ft:</span> 1,025 </li> 
+        <li class="commitment_Yes"><span>Lease Pending</span> <span class="commitment_yn">Yes</span> </li> 
+        <li class="commitment_Yes">&nbsp;</li> 
+        <li class="lv-moredetails"><a href="/proddir/prod/366/267?RedirectURL=%2FListPrice%2F0%2F20%2F%3F">View Property</a></li>
+        <!-- spanboth--> 
+        <li class="spanboth" style="margin-top:-.9em;"><span>Offered To:</span> <em> Dartmouth Graduate Students </em> </li> 
+        <li class="spanboth"><span>Contact:</span> 603-646-2170 or <a href="mailto:real.estate.office@dartmouth.edu">send us an email</a> </li> 
+        <!--
+	<li><span>Rating:</span>
+	
+	
+
+	
+
+--> 
+       </ul> 
+       <h3 class="lv-header"> <span> Sachem Village </span> <a href="/proddir/prod/366/319?RedirectURL=%2FListPrice%2F0%2F20%2F%3F" style="width:70%;"> 28 Field Road, West Lebanon, NH 
+         <!--
+
+	
+	03784
+	
+	
+--> </a> </h3> 
+       <p class="lv-photo"><a href="/proddir/prod/366/319?RedirectURL=%2FListPrice%2F0%2F20%2F%3F"><img src="http://surveyor-usmimagecatalogue.s3.amazonaws.com/12212399-160x120.jpg?1396988303" border="0" alt="" /></a></p> 
+       <ul class="lv-details"> 
+        <li><span>Housing Type:</span> Apt Condo </li> 
+        <li><span>Rent:</span> $895 </li> 
+        <!-- VAR DateFormat=%m/%d/%y --> 
+        <li><span>Date Available:</span> Immediately </li> 
+        <li><span>Miles to Campus:</span> 1 - 5 miles </li> 
+        <li><span>Bedrooms:</span> 2 </li> 
+        <li><span>Furnished:</span> No </li> 
+        <li><span>Bathrooms:</span> 1 </li> 
+        <li><span>Pets:</span> Maximum-2 </li> 
+        <li><span>Sq. Ft:</span> 644 </li> 
+        <li class="commitment_Yes"><span>Lease Pending</span> <span class="commitment_yn">Yes</span> </li> 
+        <li class="commitment_Yes">&nbsp;</li> 
+        <li class="lv-moredetails"><a href="/proddir/prod/366/319?RedirectURL=%2FListPrice%2F0%2F20%2F%3F">View Property</a></li>
+        <!-- spanboth--> 
+        <li class="spanboth" style="margin-top:-.9em;"><span>Offered To:</span> <em> Dartmouth Graduate Students </em> </li> 
+        <li class="spanboth"><span>Contact:</span> 603-646-2170 or <a href="mailto:real.estate.office@dartmouth.edu">send us an email</a> </li> 
+        <!--
+	<li><span>Rating:</span>
+	
+	2
+	
+	
+
+--> 
+       </ul> 
+       <h3 class="lv-header"> <span> Sachem Village </span> <a href="/proddir/prod/366/336?RedirectURL=%2FListPrice%2F0%2F20%2F%3F" style="width:70%;"> 84 Gould Road, West Lebanon, NH 
+         <!--
+
+	
+	03784
+	
+	
+--> </a> </h3> 
+       <p class="lv-photo"><a href="/proddir/prod/366/336?RedirectURL=%2FListPrice%2F0%2F20%2F%3F"><img src="http://surveyor-usmimagecatalogue.s3.amazonaws.com/12213447-160x120.jpg?1397065266" border="0" alt="" /></a></p> 
+       <ul class="lv-details"> 
+        <li><span>Housing Type:</span> </li> 
+        <li><span>Rent:</span> $1,675 </li> 
+        <!-- VAR DateFormat=%m/%d/%y --> 
+        <li><span>Date Available:</span> 06/20/14 </li> 
+        <li><span>Miles to Campus:</span> 1 - 5 miles </li> 
+        <li><span>Bedrooms:</span> 2 </li> 
+        <li><span>Furnished:</span> No </li> 
+        <li><span>Bathrooms:</span> 2.5 </li> 
+        <li><span>Pets:</span> Maximum-2 </li> 
+        <li><span>Sq. Ft:</span> 1,024 </li> 
+        <li class="commitment_Yes"><span>Lease Pending</span> <span class="commitment_yn">Yes</span> </li> 
+        <li class="commitment_Yes">&nbsp;</li> 
+        <li class="lv-moredetails"><a href="/proddir/prod/366/336?RedirectURL=%2FListPrice%2F0%2F20%2F%3F">View Property</a></li>
+        <!-- spanboth--> 
+        <li class="spanboth" style="margin-top:-.9em;"><span>Offered To:</span> <em> Dartmouth Graduate Students </em> </li> 
+        <li class="spanboth"><span>Contact:</span> 603-646-2170 or <a href="mailto:real.estate.office@dartmouth.edu">send us an email</a> </li> 
+        <!--
+	<li><span>Rating:</span>
+	
+	
+
+	
+
+--> 
+       </ul> 
+       <h3 class="lv-header"> <span> Sachem Village </span> <a href="/proddir/prod/366/482?RedirectURL=%2FListPrice%2F0%2F20%2F%3F" style="width:70%;"> 45 Sachem Circle, West Lebanon, NH 
+         <!--
+
+	
+	03784
+	
+	
+--> </a> </h3> 
+       <p class="lv-photo"><a href="/proddir/prod/366/482?RedirectURL=%2FListPrice%2F0%2F20%2F%3F"><img src="http://surveyor-usmimagecatalogue.s3.amazonaws.com/12213334-160x120.jpg?1397063391" border="0" alt="" /></a></p> 
+       <ul class="lv-details"> 
+        <li><span>Housing Type:</span> </li> 
+        <li><span>Rent:</span> $1,575 </li> 
+        <!-- VAR DateFormat=%m/%d/%y --> 
+        <li><span>Date Available:</span> 06/15/14 </li> 
+        <li><span>Miles to Campus:</span> 1 - 5 miles </li> 
+        <li><span>Bedrooms:</span> 2 </li> 
+        <li><span>Furnished:</span> No </li> 
+        <li><span>Bathrooms:</span> 1 </li> 
+        <li><span>Pets:</span> Maximum-2 </li> 
+        <li><span>Sq. Ft:</span> 1,025 </li> 
+        <li class="commitment_Yes"><span>Lease Pending</span> <span class="commitment_yn">Yes</span> </li> 
+        <li class="commitment_Yes">&nbsp;</li> 
+        <li class="lv-moredetails"><a href="/proddir/prod/366/482?RedirectURL=%2FListPrice%2F0%2F20%2F%3F">View Property</a></li>
+        <!-- spanboth--> 
+        <li class="spanboth" style="margin-top:-.9em;"><span>Offered To:</span> <em> Dartmouth Graduate Students </em> </li> 
+        <li class="spanboth"><span>Contact:</span> 603-646-2170 or <a href="mailto:real.estate.office@dartmouth.edu">send us an email</a> </li> 
+        <!--
+	<li><span>Rating:</span>
+	
+	
+
+	
+
+--> 
+       </ul> 
+       <div class="lv-navigator clearboth"> 
+       </div> 
+      </div> 
+      <!-- /.rentallistview --> 
+     </div> 
+     <!-- /pod --> 
+    </div> 
+    <!-- c --> 
+    <div id="l"> 
+     <div class="pod podlogin"> 
+     </div> 
+     <div class="pod"> 
+      <h3>Dartmouth College Listings</h3> 
+      <ul> 
+       <li><a href="/dartmouth-rentals/">Housing For Rent</a></li> 
+       <li><a href="/current-listings/">Housing For Sale</a></li> 
+       <li><a href="/commercial-properties/space-for-lease/">Commercial Space</a></li> 
+      </ul> 
+     </div> 
+     <!-- /.pod --> 
+     <div class="pod"> 
+      <h3>Upper Valley Rental&nbsp;List</h3> 
+      <ul> 
+       <li><a href="/upper-valley-rentals/">Housing for Rent</a></li> 
+       <li><a href="/proddir/admin/home/">Add / Edit Listing</a></li> 
+      </ul> 
+     </div> 
+     <!-- /.pod --> 
+     <div class="pod"> 
+      <h3>Upper Valley Home&nbsp;Sales</h3> 
+      <ul> 
+       <li><a href="/for-sale-housing/">Housing for Sale</a></li> 
+      </ul> 
+     </div> 
+     <!-- /.pod --> 
+     <div class="pod"> 
+      <h3>Dartmouth Tenants</h3> 
+      <ul> 
+       <li><a href="/tenant-services/place-a-work-order/">Place a Work Order</a></li> 
+      </ul> 
+     </div> 
+     <!-- /.pod --> 
+     <div class="pod"> 
+      <h3>Dartmouth College</h3> 
+      <ul> 
+       <li><a href="http://www.dartmouth.edu">Home Page</a></li> 
+       <li><a href="http://www.dartmouth.edu/~orl/">Undergraduate Housing</a></li> 
+      </ul> 
+     </div> 
+     <!-- /.pod --> 
+     <div class="pod podlogin"> 
+      <h3>Register</h3> 
+      <ul>
+       <li><a href="/user/login/">Register or Login</a></li>
+      </ul> 
+     </div> 
+    </div> 
+    <!-- l --> 
+   </div> 
+   <!-- /lc --> 
+   <div class="clearboth"></div> 
+   <div id="crest"></div> 
+  </div> 
+  <!-- /#w --> 
+ </div> 
+ <!-- /#ow --> 
+ <p id="footer"> <span class="address"><span><a href="http://www.dartmouthre.com">Dartmouth Real Estate Office</a></span></span> <span class="ph">603.646.2446</span> <span class="fax"></span> <span class="email"><a href="mailto:real.estate.office@dartmouth.edu" onclick="urchinTracker('/complete/footer-email/')">real.estate.office@dartmouth.edu</a></span> <br />4 Currier Place, Suite 304, Hanover, NH 03755 </p> 
+ <p id="usmtag"><a href="http://www.unionstreetmedia.com/?utm_campaign=passive&amp;utm_medium=usm-badge&amp;utm_source=www.dartmouthre.com&amp;utm_content=realestate" title="website development and hosting" target="_blank">Web Development and Hosting by Union Street Media</a> </p>   
+ <!-- You're on: Surveyor   Time: 0.23 -->
+</body>
