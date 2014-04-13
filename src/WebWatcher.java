@@ -77,6 +77,7 @@ public class WebWatcher {
     Document doc = Jsoup.connect(url).get();
     int num_p = doc.select("p").size();
     int num_a = doc.select("a").size();
-    return num_p * 1000 + num_a;
+    int num_commit = doc.select(".commitment_Yes").size();
+    return num_commit * 10000 + num_p * 1000 + num_a;
   }
 }

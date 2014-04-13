@@ -13,10 +13,13 @@ public class SendMailTLS {
   public static void send(String url) {
 
     final String username = "hexagon.gjj@gmail.com";
-    final String[] maillist = {"gjj2684@gmail.com",
-                          "weidongl74@gmail.com",
-                          "haopeilin.seu@gmail.com"};
     final String password = "83597908";
+    final String[] maillist = {"gjj2684@gmail.com",
+//                          "weidongl74@gmail.com",
+//                          "haopeilin.seu@gmail.com"
+                            "lexiecui@gmail.com",
+                            "jingxuan.cui.gr@dartmouth.edu"
+    };
 
     Properties props = new Properties();
     props.put("mail.smtp.auth", "true");
