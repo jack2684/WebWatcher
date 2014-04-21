@@ -17,8 +17,10 @@ public class SendMailTLS {
     final String[] maillist = {"gjj2684@gmail.com",
 //                          "weidongl74@gmail.com",
 //                          "haopeilin.seu@gmail.com"
-                            "lexiecui@gmail.com",
-                            "jingxuan.cui.gr@dartmouth.edu"
+        "lexiecui@gmail.com",
+        "lexiecui@gmail.com",
+        "lexiecui@gmail.com",
+        "jingxuan.cui.gr@dartmouth.edu"
     };
 
     Properties props = new Properties();
@@ -41,10 +43,10 @@ public class SendMailTLS {
         message.setFrom(new InternetAddress(username));
         message.setRecipients(Message.RecipientType.TO,
             InternetAddress.parse(to_mail));
-        message.setSubject("可能有新房子了！");
+        message.setSubject("【注意】可能有新房子了");
         message.setText("Dartmouth Realesate 页面有更新，请猛点下面链接："
             + "\n\n" + url
-            + "\n\n -来自Jack的刷房机");
+            + "\n\n --来自Jack的刷房机 v1.1 （注：本app处于原型阶段，有新房放出、有人退房、有人订了房都会通知，可能会有点烦人哈哈）");
 
         Transport.send(message);
 
