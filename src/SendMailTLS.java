@@ -1,3 +1,5 @@
+import java.io.*;
+import java.util.LinkedList;
 import java.util.Properties;
 
 import javax.mail.Message;
@@ -10,18 +12,22 @@ import javax.mail.internet.MimeMessage;
 
 public class SendMailTLS {
 
-  public static void send(String url) {
+  public static void send(String url) throws IOException {
 
     final String username = "hexagon.gjj@gmail.com";
     final String password = "83597908";
-    final String[] maillist = {"gjj2684@gmail.com",
-//                          "weidongl74@gmail.com",
-//                          "haopeilin.seu@gmail.com"
-        "lexiecui@gmail.com",
-        "lexiecui@gmail.com",
-        "lexiecui@gmail.com",
-        "jingxuan.cui.gr@dartmouth.edu"
-    };
+
+
+//    final String[] maillist = {"gjj2684@gmail.com",
+////                          "weidongl74@gmail.com",
+////                          "haopeilin.seu@gmail.com"
+//        "Bingjie.Ouyang.GR@dartmouth.edu",
+//        "naixin.fan.gr@dartmouth.edu",
+//        "lexiecui@gmail.com",
+//        "jingxuan.cui.gr@dartmouth.edu"
+//    };
+
+    LinkedList<String> maillist = fetchMailList();
 
     Properties props = new Properties();
     props.put("mail.smtp.auth", "true");
@@ -43,10 +49,10 @@ public class SendMailTLS {
         message.setFrom(new InternetAddress(username));
         message.setRecipients(Message.RecipientType.TO,
             InternetAddress.parse(to_mail));
-        message.setSubject("【注意】可能有新房子了");
+        message.setSubject("【注意】可能有新房子");
         message.setText("Dartmouth Realesate 页面有更新，请猛点下面链接："
             + "\n\n" + url
-            + "\n\n --来自Jack的刷房机 v1.1 （注：本app处于原型阶段，有新房放出、有人退房、有人订了房都会通知，可能会有点烦人哈哈）");
+            + "\n\n --来自Jack的刷房机 v1.2 \n （注：本app处于原型阶段，有新房放出、有人退房、有人订了房都会通知，可能会有点烦人哈哈）");
 
         Transport.send(message);
 
@@ -56,5 +62,23 @@ public class SendMailTLS {
     } catch (MessagingException e) {
       throw new RuntimeException(e);
     }
+  }
+
+  public static LinkedList<String> fetchMailList() throws IOException {
+    LinkedList<String> mailList = new LinkedList<>();
+    File fin = new File("maillist.txt");
+    FileInputStream fis = new FileInputStream(fin);
+
+    //Construct BufferedReader from InputStreamReader
+    BufferedReader br = new BufferedReader(new InputStreamReader(fis));
+
+    String line = null;
+    while ((line = br.readLine()) != null) {
+      String mail = line.split("#")[0].trim();
+      if(mail.length() != 0)
+        mailList.add(mail);
+    }
+    br.close();
+    return mailList;
   }
 }

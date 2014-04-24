@@ -17,11 +17,12 @@ public class WebWatcher {
   public static int INTERVAL = 2500; // ms
 
   public static void main(String[] args) throws InterruptedException {
-    while (!watching("http://www.dartmouthre.com/dartmouth-rentals/")) {
+//    String url = "http://192.168.8.129/";
+    String url = "http://www.dartmouthre.com/dartmouth-rentals/";
+    while (!watching(url)) {
       System.out.println("Watching down, try after 10 sec");
       Thread.sleep(INTERVAL * 4);
     }
-    // String url = "http://192.168.8.143/";
   }
 
   public static boolean watching(String url) {
